@@ -1,3 +1,6 @@
+.MainContainer{
+    display: flex;
+}
 .PaginationBttn{
     width: 80%;
     height: 15px;
@@ -25,7 +28,7 @@
     background: #46A358;
 }
 .flawersContainer{
-    width: 84vw;
+    width: 58vw;
     height: 1200px;
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +40,7 @@
     }
 }
 .Cards{
-    width: 258px;
+    width: 17vw;
     height: 300px;
     background: #FBFBFB;
 }
@@ -57,4 +60,41 @@
     font-size: 18px;
     line-height: 16px;
     color: #46A358;
+ }
+ .SubContainer{
+     display: flex;
+     flex-direction: column;
+     width: 20vw;
+ }
+ .SubContainer{
+    background: #FBFBFB;
+     height: 774px;
+     width: 21.5vw;
+     margin-right: 3vw;
+     padding: 1.5vw;
+ }
+ .rows{
+     height: 40px;
+     /* width: 19vw; */
+     display: flex;
+     justify-content: space-between;
+     font-family: Cera Pro;
+font-style: normal;
+/* font-weight: bold; */
+font-size: 15px;
+line-height: 40px;
+ }
+ .rows:active{
+    color: #46A358;
+ }
+ .title{
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    color: #3D3D3D;
+ }
+ .rangeContainer{
+     width:10vw ;
  }

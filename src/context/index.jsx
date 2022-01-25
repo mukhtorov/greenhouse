@@ -1,11 +1,15 @@
-import { Container } from './style';
+import React ,{ useState,createContext } from "react";
+import { flowers } from "../utils/navbar";
 
-export const Root = () => {
-  return (
-    <Container>
-      <h1>Root</h1>
-    </Container>
-  );
+
+export const FlowersContext = createContext();
+
+export const Context =(props)=>{
+  
+    const [data, setData]= useState(flowers);
+  return(
+     <FlowersContext.Provider value={[data, setData]}>
+         {props.children}
+     </FlowersContext.Provider>
+   );
 };
-
-export default Root;
