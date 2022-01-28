@@ -10,7 +10,9 @@ export const Main = () => {
 
   const [flower, setFlower] =useContext(FlowersContext);
   const [pageNumber, setPageNumber] =useState (0);
+  
 
+  // ---------- subnav part -------------
   const onSort=(Category)=>{
     let res=flower.filter((value)=>value.Category==='House Plants');
     setFlower(res);
@@ -56,9 +58,13 @@ export const Main = () => {
     setFlower(res);
   }  
 
-   
+  // ------------ range input ------------------
 
-  const flowersPerPage = 9;
+
+
+  
+// -----  pagination part  --------
+  const flowersPerPage = 1;
   const pagesVisited = pageNumber * flowersPerPage;
   const displayFlowers = flower.slice(pagesVisited, pagesVisited + flowersPerPage)
   .map((flower)=> {
@@ -108,17 +114,18 @@ export const Main = () => {
             <span>Accessories</span><span>({flower.length})</span>
           </div>
 
-          <h3>Price Range</h3>
-           <div className="rangeContainer"><input type="range" min={39} max={1500} name="range" id="range" /></div>
-           <p>Price:<span id=''></span></p>
+          {/* ----------- range input --------------- */}
+
+
+
+
+        
+     
+        
 
 
 
         </div>
-
-
-
-
         {/* --------------------------------- MiniNav of pagination -------------------------------------- */}
       <div>
         <div>

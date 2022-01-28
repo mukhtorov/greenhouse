@@ -29,7 +29,9 @@
 }
 .flawersContainer{
     width: 58vw;
-    height: 1200px;
+    /* width: 28vw; */
+    /* height: 1200px; */
+    height: 200px;
     display: flex;
     flex-wrap: wrap;
     gap:30px;
@@ -95,6 +97,5 @@ line-height: 40px;
     line-height: 16px;
     color: #3D3D3D;
  }
- .rangeContainer{
-     width:10vw ;
- }
+
+/* ---------- range input------------- */
