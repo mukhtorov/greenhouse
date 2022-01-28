@@ -98,4 +98,14 @@ line-height: 40px;
     color: #3D3D3D;
  }
 
-/* ---------- range input------------- */
+/* ---------- miniNav------------- */
+.mininav{display: flex;
+justify-content: space-around;}
+.mininav span{
+    font-family: Cera Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 16px;
+color: #3D3D3D;
+}
