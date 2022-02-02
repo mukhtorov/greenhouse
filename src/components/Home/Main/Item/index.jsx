@@ -1,24 +1,22 @@
 import { Container, Left, Right } from './style';
 import Button from '../../../Generic/Button';
 
-export const Main = ({ img }) => {
+export const Main = ({ value }) => {
   return (
     <Container>
       <Left>
         <Left.Text>Welcome to GreenShop</Left.Text>
         <Left.MainText>
-          Let’s Make a Better <Left.Span>Planet</Left.Span>{' '}
+        {value.title}<Left.Span>{value.highletedText}</Left.Span>{' '}
         </Left.MainText>
         <Left.Desc>
-          We are an online plant shop offering a wide range of cheap and trendy
-          plants. Use our plants to create an unique Urban Jungle. Order your
-          favorite plants!
+          {value.description}
         </Left.Desc>
         <Button width={'140px'}>SHOP NOW</Button>
       </Left>
       <Right>
-        <Right.SmallImg src={img} alt='' />
-        <Right.BigImg src={img} alt='' />
+        <Right.SmallImg src={value.src} alt='' />
+        <Right.BigImg src={value.src} alt='' />
       </Right>
     </Container>
   );

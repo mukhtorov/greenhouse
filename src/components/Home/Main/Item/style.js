@@ -16,7 +16,8 @@ export const Container = styled.div`
     rgba(245, 245, 245, 0.5) 107.51%
   );
   padding: 40px;
-  height: 450px;
+  height: 500px;
+  max-height: fit-content;
 `;
 
 export const Left = styled.div`

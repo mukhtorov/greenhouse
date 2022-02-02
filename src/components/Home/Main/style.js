@@ -34,10 +34,9 @@ Left.MainText = styled.div`
   font-weight: 900;
   font-size: 70px;
   line-height: 70px;
-
   text-transform: uppercase;
   color: #3d3d3d;
-
+  /* white-space: nowrap; */
   margin: 7px 0 5px 0;
 `;
 
