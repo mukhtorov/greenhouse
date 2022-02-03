@@ -1,7 +1,6 @@
 import { Container } from './style';
-import Button from '../Generic/Button';
 import Main from './Main';
-import Products from './Products';
+import { Products } from './Products';
 
 export const Home = () => {
   return (

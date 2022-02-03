@@ -16,7 +16,8 @@ export const Container = styled.div`
     rgba(245, 245, 245, 0.5) 107.51%
   );
   padding: 40px;
-  height: 450px;
+  height: 500px;
+  max-height: fit-content;
 `;
 
 export const Left = styled.div`
@@ -44,7 +45,7 @@ Left.MainText = styled.div`
 
   text-transform: uppercase;
   color: #3d3d3d;
-
+  /* white-space: nowrap; */
   margin: 7px 0 5px 0;
 `;
 
