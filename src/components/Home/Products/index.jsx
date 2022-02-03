@@ -1,21 +1,22 @@
-import {Container, Left,Wrapper, Title,Right} from './style.js'
+import {Container, Left,Wrapper, Title,Right,Oultlet} from './style.js'
 import {category} from '../../../utils/category';
-import Category from '../Category';
-import { Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 export const Products = () => {
+  const location = useLocation();
   return (
     <Container>
       <Left>
            <h2 className='title'>Categories</h2>
           {category.map((value)=>
-          <Wrapper>
+          <Wrapper active={location.pathname === `/home${value.path}`}
+           to={`/home${value.path}`}>
              <Title key={value.id}>{value.title}</Title>
-             <Title key={value.id}>({value.count}1)</Title>
+             <Title key={value.id}>({value.count})</Title>
           </Wrapper>)}
       </Left>
       <Right>
-        {/* <Route path='/home/:category' element={<Category/>}/> */}
+        <Oultlet/>
       </Right>
       
     </Container>);
