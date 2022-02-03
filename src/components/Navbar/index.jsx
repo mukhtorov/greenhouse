@@ -6,11 +6,8 @@ import logo from '../../assets/imgs/logo.png';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 
 export const Navbar = () => {
-
   const location = useLocation();
   const navigate = useNavigate();
-
-
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
@@ -20,8 +17,11 @@ export const Navbar = () => {
         </LogoWrapper>
         <LinkGroup>
           {navbar.map((value) => (
-            <Link active={location.pathname.includes( value.path )}
-              to={value.path}>
+            <Link
+              active={location.pathname.includes(value.path)}
+              to={value.path}
+            >
+              {/* <Link active={active === value.path} to={value.path}> */}
               {value.title}
             </Link>
           ))}

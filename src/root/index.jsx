@@ -3,7 +3,7 @@ import { Container } from './style';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { navbar } from '../utils/navbar';
 import NotFound from '../components/NotFound';
-import Category from '../components/Home/Category/index';
+import Category from '../components/Home/Category';
 import Main from '../components/Home';
 
 export const Root = () => {
@@ -17,10 +17,11 @@ export const Root = () => {
             ))}
           </Route >
           <Route path={'/'} element={<Navigate to='/home' />} />
-          <Route element={<Navbar/>}>
-          <Route element={<Main/>}>
-             <Route path={'/home/:category'} element={<Category/>} />
-          </Route>
+          <Route element={<Navbar />}>
+            {/* <Route path={'/home/'} element={<Navigate to='/home/:house' />} /> */}
+            <Route element={<Main />}>
+              <Route path={'/home/:category'} element={<Category />} />
+            </Route>
           </Route>
           <Route path={'*'} element={<NotFound />} />
         </Routes>

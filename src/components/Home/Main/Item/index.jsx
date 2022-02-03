@@ -7,11 +7,9 @@ export const Main = ({ value }) => {
       <Left>
         <Left.Text>Welcome to GreenShop</Left.Text>
         <Left.MainText>
-        {value.title}<Left.Span>{value.highletedText}</Left.Span>{' '}
+          {value.title} <Left.Span>{value.highletedText}</Left.Span>{' '}
         </Left.MainText>
-        <Left.Desc>
-          {value.description}
-        </Left.Desc>
+        <Left.Desc>{value.description}</Left.Desc>
         <Button width={'140px'}>SHOP NOW</Button>
       </Left>
       <Right>

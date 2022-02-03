@@ -2,11 +2,15 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
+  position: sticky;
+  top: 0;
   display: flex;
   width: 100%;
   height: 78px;
+  background: white;
   justify-content: space-between;
   border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+  z-index: 999;
 `;
 
 export const LogoWrapper = styled.div`

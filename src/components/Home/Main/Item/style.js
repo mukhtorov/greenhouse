@@ -45,7 +45,7 @@ Left.MainText = styled.div`
 
   text-transform: uppercase;
   color: #3d3d3d;
-
+  /* white-space: nowrap; */
   margin: 7px 0 5px 0;
 `;
 

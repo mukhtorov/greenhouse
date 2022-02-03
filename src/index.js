@@ -2,13 +2,11 @@ import React ,{useContext} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Root from './root';
-import {Context} from './context/index';
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Context>
     <Root />
-    </Context>
   </React.StrictMode>,
   document.getElementById('root')
 );

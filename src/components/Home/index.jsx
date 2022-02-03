@@ -1,6 +1,6 @@
 import { Container } from './style';
 import Main from './Main';
-import Products from './Products';
+import { Products } from './Products';
 
 export const Home = () => {
   return (
